@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Referência Bootstrap</title>
+  <link href="bootstrap.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 0px;
+      box-shadow: 0px 0px 0px rgba(0,0,0,0.1); // Ajusta sombra
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+
+    <section class="mb-5">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+            </ul>
+            
+            </div>
+        </div>
+      </nav>
+    </section>
+
+   <!-- Conteúdo -->
+ <header id="inicio" class="bg-primary text-white text-center py-5">
+   <div class="container">
+     <h1>Bem-vindo ao meu portfólio</h1>
+     <p class="lead">Aqui você encontrará informações sobre mim e meus projetos</p>
+   </div>
+ </header>
+
+  <!-- Formulário de Login -->
+  <div id="login" class="login-container">
+  <h2 class="text-center mb-4">Login</h2>
+  <form>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
+    </div>
+    <div class="mb-3">
+      <label for="senha" class="form-label">Senha</label>
+      <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="lembrar">
+      <label class="form-check-label" for="lembrar">Lembrar de mim</label>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+  </form>
+  <p class="text-center mt-3"><a href="#">Esqueceu a senha?</a></p>
+</div>
+
+    
+<div id="projetos" class="row">
+  <h2>Meus Projetos </h2>
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <img src="https://picsum.photos/400/200" class="card-img-top" alt="Projeto 1">
+      <div class="card-body">
+        <h5 class="card-title">Projeto 1</h5>
+        <p class="card-text">Descrição breve do projeto 1.</p>
+        <a href="#" class="btn btn-primary">Ver mais</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <img src="https://picsum.photos/400/200" class="card-img-top" alt="Projeto 1">
+      <div class="card-body">
+        <h5 class="card-title">Projeto 2</h5>
+        <p class="card-text">Descrição breve do projeto 2.</p>
+        <a href="#" class="btn btn-primary">Ver mais</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <img src="https://picsum.photos/400/200" class="card-img-top" alt="Projeto 3">
+      <div class="card-body">
+        <h5 class="card-title">Projeto 3</h5>
+        <p class="card-text">Descrição breve do projeto 3.</p>
+        <a href="#" class="btn btn-primary">Ver mais</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+   
+
+  <!-- Seção Sobre -->
+  
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Sobre Mim</h2>
+          <p>Olá Meu nome é Raphael, sou estudante de Análise e desenvolvimento de sistemas e tenho interesse em desenvolvimento web. Este portfólio foi criado como parte de um projeto acadêmico usando Bootstrap</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://picsum.photos/400/200" class="img-fluid rounded-circle" alt="Minha Foto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p>&copy; 2025 - Raphael</p>
+    </footer>
+  <script src="bootstrap.js"></script>
+</body>
+</html>
